@@ -1,0 +1,58 @@
+// Texts
+.text {
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  // Dark Colors
+  &--dark {
+    color: $text-color;
+  }
+
+  // Light Colors
+  &--white {
+    color: $white;
+
+    a {
+      @extend %link--white;
+    }
+  }
+
+  &--big {
+    font-size: rem(18px);
+    line-height: 1.78;
+  }
+
+  &--small {
+    font-size: rem(14px);
+    line-height: 1.79;
+  }
+}
+
+// Backgrounds
+.bg {
+  // Dark backgrounds
+  &--primary {
+    background-color: $primary-color;
+  }
+
+  // Light backgrounds
+  &--white {
+    background-color: $white;
+  }
+}
+
+
+.hidden-on-desktop {
+  @include susy-media(tablet) {
+    display: none !important;
+  }
+}

@@ -1,0 +1,20 @@
+.footer {
+  padding: rem(43px 0 36px);
+
+  &__top {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto rem(19px);
+
+    @include susy-media(tablet) {
+      flex-direction: row;
+    }
+
+    @include susy-media(desktop) {
+      max-width: rem(785px);
+    }
+  }
+}

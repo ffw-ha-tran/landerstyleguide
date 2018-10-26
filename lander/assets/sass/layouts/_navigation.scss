@@ -1,0 +1,12 @@
+// Admin menu
+.admin-menu {
+  list-style: none;
+  padding-left: 0;
+
+  &__item {
+    > a {
+      font-size: rem(20px);
+      line-height: 1.2;
+    }
+  }
+}

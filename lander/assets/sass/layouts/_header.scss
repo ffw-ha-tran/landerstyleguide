@@ -1,0 +1,37 @@
+.menu-toggle {
+  cursor: pointer;
+  display: block;
+  height: rem(16px);
+  position: relative;
+  width: rem(32px);
+  z-index: 3;
+
+  i {
+    background: $gray;
+    height: rem(4px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    transition: .8s;
+    width: 100%;
+
+    &:nth-child(2) {
+      top: 50%;
+    }
+
+    &:nth-child(3) {
+      top: 100%;
+      opacity: 1;
+    }
+  }
+
+  &-wrap {
+    display: inline-block;
+    padding: rem(22px 0);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

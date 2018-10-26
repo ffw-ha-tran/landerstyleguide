@@ -1,0 +1,211 @@
+// Custom Chosen selector.
+
+.chosen-container {
+  display: inline-block;
+  font-size: rem(13px);
+  position: relative;
+  user-select: none;
+  vertical-align: middle;
+  width: 100% !important;
+
+  .touch & {
+    display: none !important;
+  }
+
+  .chosen-drop {
+    background: $white;
+    border-top: 0;
+    border: 1px solid $gray;
+    box-sizing: border-box;
+    left: -9999em;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1010;
+  }
+
+  &.chosen-with-drop .chosen-drop {
+    left: 0;
+  }
+
+  a {
+    cursor: pointer;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+
+.chosen-results {
+  -webkit-overflow-scrolling: touch;
+  @include Montserrat;
+  margin: rem(0 2px 2px 0);
+  max-height: rem(240px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: rem(0 0 0 20px);
+  position: relative;
+
+  li {
+    display: none;
+    font-size: rem(18px);
+    line-height: rem(15px);
+    list-style: none;
+    margin: 0;
+    padding: rem(10px 0);
+    user-select: none;
+
+    .touch & {
+      padding: rem(12px 6px);
+    }
+
+    &.active-result {
+      cursor: pointer;
+      display: list-item;
+    }
+
+    &.disabled-result {
+      color: $text-color;
+      cursor: default;
+      display: list-item;
+    }
+
+    &.no-results {
+      background: $gray;
+      display: list-item;
+    }
+
+    &.group-result {
+      cursor: default;
+      display: list-item;
+      font-weight: bold;
+    }
+
+    &.group-option {
+      padding-left: rem(15px);
+    }
+
+    em {
+      font-style: normal;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      color: $gray;
+    }
+  }
+}
+
+.chosen-single {
+  //@extend .icon-chevron-down;
+  @include Montserrat;
+  background-color: $primary-color;
+  border: rem(1px) solid $primary-color;
+  color: $text-color;
+  display: block;
+  font-size: rem(18px);
+  height: rem(66px);
+  line-height: rem(66px);
+  overflow: hidden;
+  padding: rem(0 50px 0 20px);
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    //@extend .reset_hover;
+  }
+
+  &:active {
+    color: $gray !important;
+  }
+
+  div {
+    display: none;
+  }
+
+  span {
+    display: block;
+    margin-right: rem(35px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &:before {
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    @extend %icons;
+    color: $text-color;
+    font-size: rem(18px);
+    line-height: 3rem;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    width: 2.625rem;
+    z-index: 1;
+  }
+}
+
+.chosen-default {
+  color: $gray;
+}
+
+.chosen-single-with-deselect span {
+  margin-right: rem(38px);
+}
+
+.chosen-search {
+  margin: 0;
+  padding: rem(3px 4px);
+  position: relative;
+  white-space: nowrap;
+  z-index: 1010;
+}
+
+.chosen-drop {
+  background-clip: padding-box;
+  margin-top: rem(-1px);
+}
+
+.chosen-container-single-nosearch .chosen-search {
+  left: -9999em;
+  position: absolute;
+}
+
+
+.chosen-container-active {
+  .chosen-single {
+    border-color: $blue;
+  }
+
+  &.chosen-with-drop .chosen-single {
+  }
+
+  .chosen-choices {
+    border: 1px solid $gray;
+    box-shadow: 0 0 rem(5px) rgba($black, .3);
+
+    .search-field {
+      input {
+        color: $black !important;
+      }
+    }
+  }
+}
+
+.chosen-disabled {
+  opacity: .5;
+  cursor: default;
+
+  .chosen-single,
+  .chosen-choices .search-choice .search-choice-close {
+    cursor: default;
+  }
+}

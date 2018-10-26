@@ -1,0 +1,29 @@
+.menu-profile {
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    margin-bottom: rem(10px);
+    a {
+      color: $text-color;
+
+      &:hover,
+      &.active {
+        color: $primary-color;
+      }
+    }
+
+    &:last-child {
+      a {
+        color: rgba($text-color, 0.6);
+
+        &:hover,
+        &.active {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

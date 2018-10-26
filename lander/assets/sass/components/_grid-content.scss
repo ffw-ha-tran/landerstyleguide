@@ -1,0 +1,233 @@
+.menu-settings {
+  &__icon {
+    padding: 10px 0;
+    span {
+      width: rem(6px);
+      height: rem(6px);
+      border-radius: 100%;
+      background-color: $white;
+      display: inline-block;
+    }
+  }
+
+  &__list {
+    background-color: $white;
+    border-radius: rem(8px);
+    box-shadow:  0 0 rem(4px) 0 rgba(0, 0, 0, 0.18);
+    list-style: none;
+    min-width: rem(158px);
+    padding: rem(11px 19px);
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: rem(35px);
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &__item {
+    font-size: rem(13px);
+    line-height: 2.15;
+
+    &:last-child {
+      a {
+        color: $gray-d1;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.grid-content {
+  &__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+  }
+
+  &__item {
+    width: calc((100% - #{2 * 30px})/ 3);
+    margin-left: rem(30px);
+    margin-bottom: rem(50px);
+
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
+  }
+
+  input[type='checkbox'] {
+    + label {
+      width: rem(16px);
+      height: rem(16px);
+      padding: 0;
+
+      &:before {
+        border-radius: 100%;
+        width: rem(16px);
+        height: rem(16px);
+        border-color: $primary-color;
+      }
+
+      &:after{
+        background-color: $white;
+        border-radius: 100%;
+        color: $white;
+        content: '';
+        font-size: rem(14px);
+        font-weight: 700;
+        height: rem(8px);
+        left: rem(5px);
+        text-align: center;
+        top: rem(8px);
+        width: rem(8px);
+      }
+    }
+  
+    &:checked {
+      + label {
+        &:after {
+          background-color: $primary-color;
+          content: '';
+        }
+      }
+    }
+  }
+
+  &__link {
+    a {
+      @extend %icons;
+      @extend .icon-link;
+      font-size: rem(24px);
+      color: $white;
+    }
+  }
+
+  &__image {
+    line-height: 0;
+
+    img {
+      border-radius: rem(8px);
+      height: 100%;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      z-index: 1;
+    }
+  }
+
+  &__group-content {
+    background-color: rgba($white, 0);
+    border-radius: rem(8px);
+    border: solid 1px transparent;
+    bottom: 0;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0);
+    left: 0;
+    position: absolute;
+    right:0;
+    text-align: center;
+    top: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  &__option,
+  &__link,
+  &__settings {
+    position: absolute;
+    top: rem(12px);
+  }
+
+  &__option {
+    left: rem(14px);
+    opacity: 0;
+  }
+
+  &__link {
+    right: rem(50px);
+  }
+
+  &__settings {
+    top: rem(10px);
+    right: rem(14px);
+
+    &.open {
+      .menu-settings__list {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__group-hover {
+    border-radius: rem(8px);
+    height: rem(293);
+    margin-bottom: rem(18px);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+      border-color: $primary-color;
+
+      .grid-content {
+        &__group-content {
+          background-color: rgba($white, 0.7);
+          box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.09);
+          border: solid 1px $primary-color;
+        }
+
+        &__option,
+        &__button {
+          opacity: 1;
+        }
+
+        &__link {
+          a {
+            color: $primary-color;
+          }
+        }
+
+        &__settings {
+          .menu-settings__icon {
+            span {
+              background-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    line-height: 1.09;
+    color: $primary-color;
+    font-size: rem(22px);
+    text-align: center;
+    margin-bottom: rem(5px);
+  }
+
+  &__description {
+    color: $gray-39;
+    font-size: rem(12px);
+    font-weight: 300;
+    text-align: center;
+  }
+}

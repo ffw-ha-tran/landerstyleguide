@@ -1,0 +1,27 @@
+// ICONS.
+%icons {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'lander';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  &:before {
+    @extend %icons;
+  }
+}
+
+.icon-check:before {
+  content: '\e900';
+}
+
+.icon-link:before {
+  content: '\e901';
+}

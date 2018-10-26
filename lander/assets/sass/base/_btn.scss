@@ -1,0 +1,39 @@
+.button {
+  @include Montserrat;
+  appearance: none;
+  background-image: none;
+  border-radius: rem(50px);
+  border: rem(1px) solid transparent;
+  box-shadow: none;
+  display: inline-block;
+  font-size: rem(13px);
+  line-height: 1.85;
+  min-width: rem(168px);
+  outline: none;
+  padding: rem(9px 15px);
+  text-align: center;
+  text-shadow: none;
+  transition: all .3s ease;
+  color: $white;
+  cursor: pointer;
+  outline: 0;
+
+  &.blue {
+    @include button-color($blue, $white);
+  }
+
+  &.yellow {
+    @include button-color($yellow, $white);
+  }
+
+  &--outline {
+    background-color: $white;
+    border-color: $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+}
