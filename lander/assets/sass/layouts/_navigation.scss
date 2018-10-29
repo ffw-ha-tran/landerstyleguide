@@ -2,11 +2,62 @@
 .admin-menu {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
 
   &__item {
+    position: relative;
+
     > a {
       font-size: rem(20px);
       line-height: 1.2;
+      font-weight: 500;
+
+      @include susy-media(mobileOnly) {
+        display: none;
+      }
+    }
+  }
+
+  .expanded-menu {
+    &__menu-child {
+      position: absolute;
+      right: 0;
+      top: rem(40px);
+      background-color: $white;
+      border: rem(1px) solid $gray-f9;
+      width: rem(158px) ;
+      box-shadow: 0 0 rem(9px) 0 rgba(0, 0, 0, 0.1);
+      opacity: 0;
+
+      ul {
+        list-style: none;
+        text-align: left;
+        padding: rem(10px 10px 0 10px);
+        font-size: rem(13px);
+
+        li {
+          margin-bottom: rem(10px);
+
+          &:last-child {
+            a {
+              color: rgba($text-color, 0.3);
+
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.open {
+      .expanded-menu {
+        &__menu-child {
+          opacity: 1;
+          transition: opacity .3s ease;
+        }
+      }
     }
   }
 }

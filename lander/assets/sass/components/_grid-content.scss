@@ -1,12 +1,13 @@
 .menu-settings {
   &__icon {
     padding: 10px 0;
+
     span {
-      width: rem(6px);
-      height: rem(6px);
-      border-radius: 100%;
       background-color: $white;
+      border-radius: 100%;
       display: inline-block;
+      height: rem(6px);
+      width: rem(6px);
     }
   }
 
@@ -16,14 +17,14 @@
     box-shadow:  0 0 rem(4px) 0 rgba(0, 0, 0, 0.18);
     list-style: none;
     min-width: rem(158px);
+    opacity: 0;
     padding: rem(11px 19px);
     position: absolute;
     right: 0;
     text-align: left;
     top: rem(35px);
-    z-index: 3;
-    opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 3;
   }
 
   &__item {
@@ -44,35 +45,55 @@
 
 .grid-content {
   &__list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     align-content: stretch;
     align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @include susy-media(mobileLandscape) {
+      flex-direction: row;
+    }
   }
 
   &__item {
-    width: calc((100% - #{2 * 30px})/ 3);
-    margin-left: rem(30px);
     margin-bottom: rem(50px);
+    width: 100%;
 
-    &:nth-child(3n + 1) {
-      margin-left: 0;
+    @include susy-media(mobileLandscape){
+      margin-left: rem(30px);
+      width: calc((100% - #{30px})/ 2);
+
+      &:nth-child(2n + 1) {
+        margin-left: 0;
+      }
+    }
+
+    @include susy-media(tablet) {
+      width: calc((100% - #{2 * 30px})/ 3);
+
+      &:nth-child(2n + 1) {
+        margin-left: rem(30px);
+      }
+  
+      &:nth-child(3n + 1) {
+        margin-left: 0;
+      }
     }
   }
 
   input[type='checkbox'] {
     + label {
-      width: rem(16px);
       height: rem(16px);
       padding: 0;
+      width: rem(16px);
 
       &:before {
-        border-radius: 100%;
-        width: rem(16px);
-        height: rem(16px);
         border-color: $primary-color;
+        border-radius: 100%;
+        height: rem(16px);
+        width: rem(16px);
       }
 
       &:after{
@@ -111,16 +132,10 @@
 
   &__image {
     line-height: 0;
+    z-index: 1;
 
     img {
       border-radius: rem(8px);
-      height: 100%;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: auto;
-      z-index: 1;
     }
   }
 
@@ -176,9 +191,7 @@
 
   &__group-hover {
     border-radius: rem(8px);
-    height: rem(293);
     margin-bottom: rem(18px);
-    overflow: hidden;
     position: relative;
     width: 100%;
 

@@ -10,12 +10,12 @@ h6 {
   @include Montserrat;
   color: $text-color;
   font-weight: 600;
+  line-height: 1.15;
   margin-bottom: rem(15px);
 }
 
 h1 {
   font-size: rem(40px);
-  line-height: 1.15;
 }
 
 h2 {

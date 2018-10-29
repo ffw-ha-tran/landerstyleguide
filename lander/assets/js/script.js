@@ -8,29 +8,9 @@
   // Add  functionality here.
 
   //Form select use chosen
-  //$('.form-select').chosen();
-
-  // var jsClassActive = 'is-active',
-  //     $jsTogleMenu = $('.js-open-menu'),
-  //     $jsBtnClick = $('.js-btn-menu', $jsTogleMenu);
-  //     $jsOpenMenu = $jsBtnClick.next('.menu-settings__list');
-  // $jsBtnClick.on('click', function(){
-  //   // if ($jsOpenMenu.hasClass(jsClassActive)) {
-  //   //   $jsOpenMenu.removeClass(jsClassActive);
-  //   // }
-  //   // else {
-  //   //   $jsOpenMenu.addClass(jsClassActive);
-  //   // }
-  //   $(this).toggleClass(jsClassActive);
-  //   $(this).next().addClass(jsClassActive);
-  // });
-
-  // $(document).on('touchstart click', function (e) {
-  //   if ($jsOpenMenu.has(e.target).length === 0 && $jsOpenMenu.hasClass(jsClassActive)) {
-  //     console.log('remove');
-  //     $jsOpenMenu.removeClass(jsClassActive);
-  //   }
-  // });
+  $('.form-select').chosen({
+    disable_search_threshold: 10
+  });
 
   var showHiddenFunction = function (btn, flag, clickOutside, dropDown, childSelector) {
     var $btn = btn,
@@ -71,6 +51,39 @@
       $jsMenu = $('.js-open-menu', $jsItem),
       $jsMenuSettingsBtn = $('.js-btn-menu', $jsMenu),
       $menuSettingsList = $jsMenuSettingsBtn.next('.menu-settings__list');
-  showHiddenFunction($jsMenuSettingsBtn, flagMenuSettings, true, false, $menuSettingsList);
+
+  var expandedMenuFunc = function (index, e) {
+    var $this = $(this),
+        $parent = $this.closest('.js-open-menu'),
+        $childMenu = $parent.find('.menu-settings__list');
+    showHiddenFunction($this, flagMenuSettings, true, false, $menuSettingsList);
+  }
+  $jsMenuSettingsBtn.each(expandedMenuFunc);
+
+  var $jsBtnMobile = $('.menu-toggle-wrap'),
+      $jsBtnClick = $('.expanded-menu > a'),
+      $jsMenuChild = $('.expanded-menu__menu-child');
+    showHiddenFunction($jsBtnClick,flagMenuSettings, true, false, $jsMenuChild);
+
+    var widthScreen = window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+    if(widthScreen < 768) {
+      showHiddenFunction($jsBtnMobile, flagMenuSettings, true, false, $jsMenuChild);
+    }
+
+    $(window).on('load', function () {
+      var $table = $('table', document);
+      if ($table.length && !$table.parent().hasClass('table-responsive')) {
+        $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
+      }
+    });
+
+  // Include html file in html
+  // var includes = $('[data-include]');
+  //   jQuery.each(includes, function(){
+  //     var file = 'assets/components/' + $(this).data('include') + '.html';
+  //     $(this).load(file);
+  //   });
 
 }(this, this.document, this.jQuery));

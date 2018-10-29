@@ -10,6 +10,7 @@ $desktop-superwide: 1440px;
 $container-margin-mobile: 20px;
 $container-margin-tablet: 30px;
 $container: 960px;
+$container-medium: 1024px;
 $container-wide: 1276px;
 $container-superwide: $container-wide;
 
@@ -75,7 +76,7 @@ $susy-desktop-wide: (
   columns: $column-desktop,
   gutters: 36px / 62px,
   container-position: center,
-  container: rem($container-wide),
+  container: rem($container-medium),
   debug: (
     image: $show-image,
     color: rgba($silver, .25),
