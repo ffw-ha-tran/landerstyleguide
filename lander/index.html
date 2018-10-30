@@ -10,6 +10,30 @@
     
   </head>
   <body>
+    <!-- Navigation Scroll -->
+    <nav class="navigation-fix">
+      <span class="navigation-fix__icon">
+        <i></i>
+        <i></i>
+      </span>
+      <ul class="menu">
+        <li class="menu__item no-link">1. Base Elements</li>
+        <li class="menu__item"><a href="#heading">Heading</a></li>
+        <li class="menu__item"><a href="#paragraph">Paragraph</a></li>
+        <li class="menu__item"><a href="#inlineelements">Inline Elements</a></li>
+        <li class="menu__item"><a href="#icons">Icons</a></li>
+        <li class="menu__item"><a href="#blockquote">Blockquote</a></li>
+        <li class="menu__item"><a href="#table">Table</a></li>
+        <li class="menu__item"><a href="#list">List</a></li>
+        <li class="menu__item"><a href="#button">Button</a></li>
+        <li class="menu__item"><a href="#form">Form</a></li>
+        <li class="menu__item no-link">2. Components</li>
+        <li class="menu__item"><a href="#menuprofile">Menu Profile</a></li>
+        <li class="menu__item"><a href="#gridcontent">Grid Content</a></li>
+        <li class="menu__item"><a href="#formprofile">Form Profile</a></li>
+      </ul>
+    </nav>
+    <!-- Header -->
     <section id="header" class="header">
       <div class="container">
         <div class="header__wrap">
@@ -36,460 +60,525 @@
     <!-- start main  section -->
     <section class="main">
       <div class="container">
-        <h1 class="text--center">Style Guide</h1>
-        <br>
-        <br>
-        <h2><strong>Base Elements</strong></h2>
-        <h4><strong>1. Heading</strong></h4>
-        <h1>Heading Level 1 | 40px</h1>
-        <h2>Heading Level 2 | 30px</h2>
-        <h3>Heading Level 3 | 24px</h3>
-        <h4>Heading Level 4 | 16px</h4>
-        <h5>Heading Level 5 | 14px</h5>
-        <h6>Heading Level 6 | 12px</h6>
-        <br>
-        <h1><a href="#">Level 1 | 40px</a></h1>
-        <h2><a href="#">Heading Level 2 | 30px</a></h2>
-        <h3><a href="#">Heading Level 3 | 24px</a></h3>
-        <h4><a href="#">Heading Level 4 | 16px</a></h4>
-        <h5><a href="#">Heading Level 5 | 14px</a></h5>
-        <h6><a href="#">Heading Level 6 | 12px</a></h6>
-
+        <div class="example"><h1 class="text--center">Style Guide</h1></div>
+        <div class="example"><h2><strong>1. Base Elements</strong></h2></div>
+        <div class="example" id="heading">
+          <h3 class="example__title"><strong>Heading</strong></h3>
+          <h1>Heading Level 1 | 40px</h1>
+          <h2>Heading Level 2 | 30px</h2>
+          <h3>Heading Level 3 | 20px</h3>
+          <h4>Heading Level 4 | 16px</h4>
+          <h5>Heading Level 5 | 14px</h5>
+          <h6>Heading Level 6 | 12px</h6>
+          <br>
+          <h1><a href="#">Level 1 | 40px</a></h1>
+          <h2><a href="#">Heading Level 2 | 30px</a></h2>
+          <h3><a href="#">Heading Level 3 | 20px</a></h3>
+          <h4><a href="#">Heading Level 4 | 16px</a></h4>
+          <h5><a href="#">Heading Level 5 | 14px</a></h5>
+          <h6><a href="#">Heading Level 6 | 12px</a></h6>
+        </div>
         <!-- Paragraph -->
-        <h4><strong>2. Paragraph</strong></h4>
-        <p class="text--big">Text Big <br> Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis? Sed mattis quam quam. Nunc congue felis id augue varius, non facilisis arcu scelerisque.</p>
-        <p>Text <br> Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis? Sed mattis quam quam. Nunc congue felis id augue varius, non facilisis arcu scelerisque.</p>
-        <p class="text--small">Text Small <br> Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis? Sed mattis quam quam. Nunc congue felis id augue varius, non facilisis arcu scelerisque.</p>
-
+        <div class="example" id="paragraph">
+          <h3 class="example__title"><strong>Paragraph</strong></h3>
+          <p class="text--big">Text Big <br> Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis? Sed mattis quam quam. Nunc congue felis id augue varius, non facilisis arcu scelerisque.</p>
+          <p>Text <br> Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis? Sed mattis quam quam. Nunc congue felis id augue varius, non facilisis arcu scelerisque.</p>
+          <p class="text--small">Text Small <br> Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis? Sed mattis quam quam. Nunc congue felis id augue varius, non facilisis arcu scelerisque.</p>
+        </div>
         <!-- Inline Elements -->
-        <h4><strong>3. Inline Elements</strong></h4>
-        <p><a href="#">This is a text link</a></p>
-        <p><a href="#" class="focused">This is a text link focused</a></p>
-        <p><strong>Strong is used to indicate strong importance</strong></p>
-        <p><em>This text has added emphasis</em></p>
-        <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
-        <p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
-        <p><s>This text has a strikethrough</s></p>
-        <p>Superscript<sup>®</sup></p>
-        <p>Subscript for things like H<sub>2</sub>O</p>
-        <p><small>This small text is small for for fine print, etc.</small></p>
-        <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
-        <p>Keybord input: <kbd>Cmd</kbd></p>
-        <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
-        <p><cite>This is a citation</cite>
-        </p><p>The <dfn>dfn element</dfn> indicates a definition.</p>
-        <p>The <mark>mark element</mark> indicates a highlight</p>
-        <p><code>This is what inline code looks like.</code></p>
-        <p><samp>This is sample output from a computer program</samp></p>
-        <p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
-
-        <!-- Inline Elements -->
-        <h4><strong>4. Blockquote</strong></h4>
-        <blockquote>
-          <p>We have the possibility to do it. We have the knowledge. We have the resources. And with the Rome Declaration and the Plan of Action, we've shown that we have the will.</p>
-        </blockquote>
-        <br>
+        <div class="example" id="inlineelements">
+          <h3 class="example__title"><strong>Inline Elements</strong></h3>
+          <p><a href="#">This is a text link</a></p>
+          <p><a href="#" class="focused">This is a text link focused</a></p>
+          <p><strong>Strong is used to indicate strong importance</strong></p>
+          <p><em>This text has added emphasis</em></p>
+          <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+          <p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+          <p><s>This text has a strikethrough</s></p>
+          <p>Superscript<sup>®</sup></p>
+          <p>Subscript for things like H<sub>2</sub>O</p>
+          <p><small>This small text is small for for fine print, etc.</small></p>
+          <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+          <p>Keybord input: <kbd>Cmd</kbd></p>
+          <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+          <p><cite>This is a citation</cite>
+          </p><p>The <dfn>dfn element</dfn> indicates a definition.</p>
+          <p>The <mark>mark element</mark> indicates a highlight</p>
+          <p><code>This is what inline code looks like.</code></p>
+          <p><samp>This is sample output from a computer program</samp></p>
+          <p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
+        </div>
+        <div class="example" id="icons">
+          <h3 class="example__title"><strong>Icons</strong></h3>
+          <ul class="example__grid">
+            <li><i class="icon-check"></i>icon-check</li>
+            <li><i class="icon-link"></i>icon-link</li>
+            <li><i class="icon-cheveron-down"></i>icon-cheveron-down</li>
+          </ul>
+        </div>
+        <!-- Blockquote -->
+        <div class="example" id="blockquote">
+          <h3 class="example__title"><strong>Blockquote</strong></h3>
+          <blockquote>
+            <p>We have the possibility to do it. We have the knowledge. We have the resources. And with the Rome Declaration and the Plan of Action, we've shown that we have the will.</p>
+          </blockquote>
+        </div>
         <!--Table-->
-        <h4><strong>5. Table</strong></h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Date</th>
-              <th>Data by TB</th>
-              <th>Data to Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tom Baker</td>
-              <td>10-21-2017</td>
-              <td>870</td>
-              <td>42931</td>
-            </tr>
-            <tr>
-              <td>Minnie Riley</td>
-              <td>11-29-2017</td>
-              <td>529</td>
-              <td>77239</td>
-            </tr>
-            <tr>
-              <td>Polly Bass</td>
-              <td>04-09-2017</td>
-              <td>586</td>
-              <td>25291</td>
-            </tr>
-            <tr>
-              <td>Rosa McKinney</td>
-              <td>10-15-2017</td>
-              <td>871</td>
-              <td>68407</td>
-            </tr>
-            <tr>
-              <td>Belle Weaver</td>
-              <td>03-01-2017</td>
-              <td>372</td>
-              <td>81891</td>
-            </tr>
-          </tbody>
-        </table>
-        <br>
+        <div class="example" id="table">
+          <h3 class="example__title"><strong>Table</strong></h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Data by TB</th>
+                <th>Data to Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tom Baker</td>
+                <td>10-21-2017</td>
+                <td>870</td>
+                <td>42931</td>
+              </tr>
+              <tr>
+                <td>Minnie Riley</td>
+                <td>11-29-2017</td>
+                <td>529</td>
+                <td>77239</td>
+              </tr>
+              <tr>
+                <td>Polly Bass</td>
+                <td>04-09-2017</td>
+                <td>586</td>
+                <td>25291</td>
+              </tr>
+              <tr>
+                <td>Rosa McKinney</td>
+                <td>10-15-2017</td>
+                <td>871</td>
+                <td>68407</td>
+              </tr>
+              <tr>
+                <td>Belle Weaver</td>
+                <td>03-01-2017</td>
+                <td>372</td>
+                <td>81891</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <!-- List -->
-        <h4><strong>6. List</strong></h4>
-        <p>Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis. </p>
-        <div>
-          <ul>
+        <div class="example" id="list">
+          <h3 class="example__title"><strong>List</strong></h3>
+          <p>Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis. </p>
+          <div>
+            <ul>
+              <li>The top predictors of DevOps success</li>
+              <li>The surprising data risks faced by DevOps adopters</li>
+              <li>Emerging tools for quickly creating production-like dev/test environments</li>
+            </ul>
+          </div>
+          <p>Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis. </p>
+          <ol>
             <li>The top predictors of DevOps success</li>
             <li>The surprising data risks faced by DevOps adopters</li>
             <li>Emerging tools for quickly creating production-like dev/test environments</li>
-          </ul>
+          </ol>
+          <p>Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis. </p>
         </div>
-        <p>Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis. </p>
-        <ol>
-          <li>The top predictors of DevOps success</li>
-          <li>The surprising data risks faced by DevOps adopters</li>
-          <li>Emerging tools for quickly creating production-like dev/test environments</li>
-        </ol>
-        <p>Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis. </p>
-
         <!-- Button -->
-        <h4><strong>7. Button</strong></h4>
-        <p style="padding: 15px"><a class="button blue" href="#">Learn More</a></p>
-        <p style="padding: 15px"><a class="button button--outline" href="#">Learn More</a></p>
-
-        <!-- Form -->
-        <h4><strong>7. Form </strong></h4>
-        <form>
-          <div class="form-item form-type-select">
-            <label for="edit-select">Select</label>
-            <select id="edit-select" name="select" class="form-select">
-              <option value="" selected="selected">None</option>
-              <option value="Sunday">Sunday</option>
-              <option value="Monday">Monday</option>
-              <option value="Tuesday">Tuesday</option>
-              <option value="Wednesday">Wednesday</option>
-              <option value="Thursday">Thursday</option>
-              <option value="Friday">Friday</option>
-              <option value="Saturday">Saturday</option>
-            </select>
-          </div>
-
-          <div class="form-item form-type-textfield form-item-name">
-            <label for="edit-name">Text Input Normal</label>
-            <input type="text" id="edit-name" name="name" value="" class="form-text" placeholder="Input text">
-          </div>
-
-          <div class="form-item form-type-textfield form-item-email form-item--error">
-            <label for="edit-email" >Text Input Error</label>
-            <input type="text" id="edit-email" name="email" value="" class="form-email error" placeholder="Input text">
-          </div>
-
-          <div class="form-item form-type-textfield form-item-subject">
-            <label for="edit-subject">Text Input Disabled</label>
-            <input type="text" id="edit-subject" name="subject" value="" class="form-text" disabled="" placeholder="Input text">
-          </div>
-
-          <div class="form-item form-type-textarea form-item-message">
-            <label for="edit-message">Text area</label>
-            <div class="form-textarea-wrapper">
-              <textarea id="edit-message" name="message" rows="5" cols="60" class="form-textarea resize-vertical"></textarea>
-            </div>
-          </div>
-
-          <fieldset id="edit-months--wrapper" class="fieldgroup form-composite form-item form-wrapper">
-            <legend>
-              <span class="fieldset-legend">Checkbox</span>
-            </legend>
-            <div class="fieldset-wrapper">
-              <div id="edit-months" class="webform-options-display-one-column form-checkboxes">
-                <div class="form-item form-type-checkbox form-item-months-january">
-                  <input type="checkbox" id="edit-months-january" name="months[January]" value="January" class="form-checkbox">
-                  <label for="edit-months-january" class="option">January</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-february">
-                  <input data-drupal-selector="edit-months-february" type="checkbox" id="edit-months-february" name="months[February]" value="February" class="form-checkbox">
-                  <label for="edit-months-february" class="option">February</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-march">
-                  <input type="checkbox" id="edit-months-march" name="months[March]" value="March" class="form-checkbox">
-                  <label for="edit-months-march" class="option">March</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-april">
-                  <input type="checkbox" id="edit-months-april" name="months[April]" value="April" class="form-checkbox">
-                  <label for="edit-months-april" class="option">April</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-may">
-                  <input type="checkbox" id="edit-months-may" name="months[May]" value="May" class="form-checkbox">
-                  <label for="edit-months-may" class="option">May</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-june">
-                  <input type="checkbox" id="edit-months-june" name="months[June]" value="June" class="form-checkbox">
-                  <label for="edit-months-june" class="option">June</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-july">
-                  <input type="checkbox" id="edit-months-july" name="months[July]" value="July" class="form-checkbox">
-                  <label for="edit-months-july" class="option">July</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-august">
-                  <input type="checkbox" id="edit-months-august" name="months[August]" value="August" class="form-checkbox">
-                  <label for="edit-months-august" class="option">August</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-september">
-                  <input type="checkbox" id="edit-months-september" name="months[September]" value="September" class="form-checkbox">
-                  <label for="edit-months-september" class="option">September</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-october">
-                  <input type="checkbox" id="edit-months-october" name="months[October]" value="October" class="form-checkbox">
-                  <label for="edit-months-october" class="option">October</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-november">
-                  <input type="checkbox" id="edit-months-november" name="months[November]" value="November" class="form-checkbox">
-                  <label for="edit-months-november" class="option">November</label>
-                </div>
-                <div class="form-item form-type-checkbox form-item-months-december">
-                  <input type="checkbox" id="edit-months-december" name="months[December]" value="December" class="form-checkbox">
-                  <label for="edit-months-december" class="option">December</label>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-
-          <fieldset id="edit-radios--wrapper" class="fieldgroup form-composite form-item form-wrapper ">
-            <legend>
-              <span class="fieldset-legend">Radio</span>
-            </legend>
-            <div class="fieldset-wrapper">
-              <div id="edit-radios" class="webform-options-display-one-column form-radios">
-                <div class="form-item form-type-radio form-item-radios">
-                  <input type="radio" id="edit-radios-english" name="radios" value="English" class="form-radio">
-                  <label for="edit-radios-english" class="option">English</label>
-                </div>
-                <div class="form-item form-type-radio form-item-radios">
-                  <input type="radio" id="edit-radios-vietnamese" name="radios" value="vietnamese" class="form-radio">
-                  <label for="edit-radios-vietnamese" class="option">Vietnamese</label>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-
-          <div class="form-actions webform-actions form-wrapper" id="edit-actions">
-            <input class="webform-button--submit button blue form-submit" type="submit" id="edit-actions-submit" name="op" value="Submit">
-          </div>
-        </form>
-        <br>
-        <br>
-        <h2><strong>Components</strong></h2>
-        <br>
-        <h4><strong>1. Menu Profile</strong></h4>
-        <div class="menu-profile">
-          <ul class="menu-profile__list">
-            <li class="menu-profile__item"><a href="#">Your account</a></li>
-            <li class="menu-profile__item"><a href="#">Team</a></li>
-            <li class="menu-profile__item"><a href="#">Plan</a></li>
-            <li class="menu-profile__item"><a href="#">Billing</a></li>
-            <li class="menu-profile__item"><a href="#">Your templates</a></li>
-            <li class="menu-profile__item"><a href="#">Connections</a></li>
-            <li class="menu-profile__item"><a href="#">Cancel subscription</a></li>
-          </ul>
+        <div class="example" id="button">
+          <h3 class="example__title"><strong>Button</strong></h3>
+          <p style="padding: 15px"><a class="button blue" href="#">Learn More</a></p>
+          <p style="padding: 15px"><a class="button button--outline" href="#">Learn More</a></p>
         </div>
-          <br>
-        <h4><strong>2. Grid Content</strong></h4>
-        <div class="grid-content">
-          <div class="grid-content__list">
-            <div class="grid-content__item">
-              <div class="grid-content__group-hover">
-                <div class="grid-content__group-content">
-                  <div class="grid-content__option">
-                    <div class="form-item form-type-checkbox">
-                      <input type="checkbox" id="group-template-1" name="projects" value="projects" class="form-checkbox">
-                      <label for="group-template-1" class="option"></label>
-                    </div>
-                  </div>
-                  <div class="grid-content__link"><a href="#" target="_blank"></a></div>
-                  <div class="grid-content__settings js-open-menu">
-                    <span class="menu-settings__icon js-btn-menu">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                    <ul class="menu-settings__list">
-                      <li class="menu-settings__item"><a href="#">Settings</a></li>
-                      <li class="menu-settings__item"><a href="#">Duplicate</a></li>
-                      <li class="menu-settings__item"><a href="#">Publish</a></li>
-                      <li class="menu-settings__item"><a href="#">Download</a></li>
-                      <li class="menu-settings__item"><a href="#">Revisions</a></li>
-                      <li class="menu-settings__item"><a href="#">Delete</a></li>
-                    </ul>
-                  </div>
-                  <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
-                </div>
-                <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
-              </div>
-              <div class="grid-content__title">Aquire</div>
-              <div class="grid-content__description">Denis Cojemeachin</div>
+        <!-- Form -->
+        <div class="example" id="form">
+          <h3 class="example__title"><strong>Form </strong></h3>
+          <form>
+            <div class="form-item form-type-select">
+              <label for="edit-select">Select</label>
+              <select id="edit-select" name="select" class="form-select">
+                <option value="" selected="selected">None</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
             </div>
-            <div class="grid-content__item">
-              <div class="grid-content__group-hover">
-                <div class="grid-content__group-content">
-                  <div class="grid-content__option">
-                    <div class="form-item form-type-checkbox">
-                      <input type="checkbox" id="group-template-2" name="projects" value="projects" class="form-checkbox">
-                      <label for="group-template-2" class="option"></label>
-                    </div>
+
+            <div class="form-item form-type-textfield form-item-name">
+              <label for="edit-name">Text Input Normal</label>
+              <input type="text" id="edit-name" name="name" value="" class="form-text" placeholder="Input text">
+            </div>
+
+            <div class="form-item form-type-textfield form-item-email form-item--error">
+              <label for="edit-email" >Text Input Error</label>
+              <input type="text" id="edit-email" name="email" value="" class="form-email error" placeholder="Input text">
+            </div>
+
+            <div class="form-item form-type-textfield form-item-subject">
+              <label for="edit-subject">Text Input Disabled</label>
+              <input type="text" id="edit-subject" name="subject" value="" class="form-text" disabled="" placeholder="Input text">
+            </div>
+
+            <div class="form-item form-type-textarea form-item-message">
+              <label for="edit-message">Text area</label>
+              <div class="form-textarea-wrapper">
+                <textarea id="edit-message" name="message" rows="5" cols="60" class="form-textarea resize-vertical"></textarea>
+              </div>
+            </div>
+
+            <fieldset id="edit-months--wrapper" class="fieldgroup form-composite form-item form-wrapper">
+              <legend>
+                <span class="fieldset-legend">Checkbox</span>
+              </legend>
+              <div class="fieldset-wrapper">
+                <div id="edit-months" class="webform-options-display-one-column form-checkboxes">
+                  <div class="form-item form-type-checkbox form-item-months-january">
+                    <input type="checkbox" id="edit-months-january" name="months[January]" value="January" class="form-checkbox">
+                    <label for="edit-months-january" class="option">January</label>
                   </div>
-                  <div class="grid-content__link"><a href="#" target="_blank"></a></div>
-                  <div class="grid-content__settings js-open-menu">
+                  <div class="form-item form-type-checkbox form-item-months-february">
+                    <input data-drupal-selector="edit-months-february" type="checkbox" id="edit-months-february" name="months[February]" value="February" class="form-checkbox">
+                    <label for="edit-months-february" class="option">February</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-march">
+                    <input type="checkbox" id="edit-months-march" name="months[March]" value="March" class="form-checkbox">
+                    <label for="edit-months-march" class="option">March</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-april">
+                    <input type="checkbox" id="edit-months-april" name="months[April]" value="April" class="form-checkbox">
+                    <label for="edit-months-april" class="option">April</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-may">
+                    <input type="checkbox" id="edit-months-may" name="months[May]" value="May" class="form-checkbox">
+                    <label for="edit-months-may" class="option">May</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-june">
+                    <input type="checkbox" id="edit-months-june" name="months[June]" value="June" class="form-checkbox">
+                    <label for="edit-months-june" class="option">June</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-july">
+                    <input type="checkbox" id="edit-months-july" name="months[July]" value="July" class="form-checkbox">
+                    <label for="edit-months-july" class="option">July</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-august">
+                    <input type="checkbox" id="edit-months-august" name="months[August]" value="August" class="form-checkbox">
+                    <label for="edit-months-august" class="option">August</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-september">
+                    <input type="checkbox" id="edit-months-september" name="months[September]" value="September" class="form-checkbox">
+                    <label for="edit-months-september" class="option">September</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-october">
+                    <input type="checkbox" id="edit-months-october" name="months[October]" value="October" class="form-checkbox">
+                    <label for="edit-months-october" class="option">October</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-november">
+                    <input type="checkbox" id="edit-months-november" name="months[November]" value="November" class="form-checkbox">
+                    <label for="edit-months-november" class="option">November</label>
+                  </div>
+                  <div class="form-item form-type-checkbox form-item-months-december">
+                    <input type="checkbox" id="edit-months-december" name="months[December]" value="December" class="form-checkbox">
+                    <label for="edit-months-december" class="option">December</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset id="edit-radios--wrapper" class="fieldgroup form-composite form-item form-wrapper ">
+              <legend>
+                <span class="fieldset-legend">Radio</span>
+              </legend>
+              <div class="fieldset-wrapper">
+                <div id="edit-radios" class="webform-options-display-one-column form-radios">
+                  <div class="form-item form-type-radio form-item-radios">
+                    <input type="radio" id="edit-radios-english" name="radios" value="English" class="form-radio">
+                    <label for="edit-radios-english" class="option">English</label>
+                  </div>
+                  <div class="form-item form-type-radio form-item-radios">
+                    <input type="radio" id="edit-radios-vietnamese" name="radios" value="vietnamese" class="form-radio">
+                    <label for="edit-radios-vietnamese" class="option">Vietnamese</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-actions webform-actions form-wrapper" id="edit-actions">
+              <input class="webform-button--submit button blue form-submit" type="submit" id="edit-actions-submit" name="op" value="Submit">
+            </div>
+          </form>
+        </div>
+        <div class="example"><h2><strong>2. Components</strong></h2></div>
+        <div class="example" id="menuprofile">
+          <h3 class="example__title"><strong>Menu Profile</strong></h3>
+          <div class="menu-profile">
+            <ul class="menu-profile__list">
+              <li class="menu-profile__item"><a href="#">Your account</a></li>
+              <li class="menu-profile__item"><a href="#">Team</a></li>
+              <li class="menu-profile__item"><a href="#">Plan</a></li>
+              <li class="menu-profile__item"><a href="#">Billing</a></li>
+              <li class="menu-profile__item"><a href="#">Your templates</a></li>
+              <li class="menu-profile__item"><a href="#">Connections</a></li>
+              <li class="menu-profile__item"><a href="#">Cancel subscription</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="example" id="gridcontent">
+          <h3 class="example__title"><strong>Grid Content</strong></h3>
+          <div class="grid-content">
+            <div class="grid-content__list">
+              <div class="grid-content__item">
+                <div class="grid-content__group-hover">
+                  <div class="grid-content__group-content">
+                    <div class="grid-content__option">
+                      <div class="form-item form-type-checkbox">
+                        <input type="checkbox" id="group-template-1" name="projects" value="projects" class="form-checkbox">
+                        <label for="group-template-1" class="option"></label>
+                      </div>
+                    </div>
+                    <div class="grid-content__link"><a href="#" target="_blank"></a></div>
+                    <div class="grid-content__settings js-open-menu">
                       <span class="menu-settings__icon js-btn-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </span>
+                      <ul class="menu-settings__list">
+                        <li class="menu-settings__item"><a href="#">Settings</a></li>
+                        <li class="menu-settings__item"><a href="#">Duplicate</a></li>
+                        <li class="menu-settings__item"><a href="#">Publish</a></li>
+                        <li class="menu-settings__item"><a href="#">Download</a></li>
+                        <li class="menu-settings__item"><a href="#">Revisions</a></li>
+                        <li class="menu-settings__item"><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                    <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
+                  </div>
+                  <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
+                </div>
+                <div class="grid-content__title">Aquire</div>
+                <div class="grid-content__description">Denis Cojemeachin</div>
+              </div>
+              <div class="grid-content__item">
+                <div class="grid-content__group-hover">
+                  <div class="grid-content__group-content">
+                    <div class="grid-content__option">
+                      <div class="form-item form-type-checkbox">
+                        <input type="checkbox" id="group-template-2" name="projects" value="projects" class="form-checkbox">
+                        <label for="group-template-2" class="option"></label>
+                      </div>
+                    </div>
+                    <div class="grid-content__link"><a href="#" target="_blank"></a></div>
+                    <div class="grid-content__settings js-open-menu">
+                        <span class="menu-settings__icon js-btn-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </span>
+                      <ul class="menu-settings__list">
+                        <li class="menu-settings__item"><a href="#">Settings</a></li>
+                        <li class="menu-settings__item"><a href="#">Duplicate</a></li>
+                        <li class="menu-settings__item"><a href="#">Publish</a></li>
+                        <li class="menu-settings__item"><a href="#">Download</a></li>
+                        <li class="menu-settings__item"><a href="#">Revisions</a></li>
+                        <li class="menu-settings__item"><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                    <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
+                  </div>
+                  <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
+                </div>
+                <div class="grid-content__title">Aquire</div>
+                <div class="grid-content__description">Denis Cojemeachin</div>
+              </div>
+              <div class="grid-content__item">
+                <div class="grid-content__group-hover">
+                  <div class="grid-content__group-content">
+                    <div class="grid-content__option">
+                      <div class="form-item form-type-checkbox">
+                        <input type="checkbox" id="group-template-3" name="projects" value="projects" class="form-checkbox">
+                        <label for="group-template-3" class="option"></label>
+                      </div>
+                    </div>
+                    <div class="grid-content__link"><a href="#" target="_blank"></a></div>
+                    <div class="grid-content__settings js-open-menu">
+                        <span class="menu-settings__icon js-btn-menu">
                           <span></span>
                           <span></span>
                           <span></span>
                         </span>
-                    <ul class="menu-settings__list">
-                      <li class="menu-settings__item"><a href="#">Settings</a></li>
-                      <li class="menu-settings__item"><a href="#">Duplicate</a></li>
-                      <li class="menu-settings__item"><a href="#">Publish</a></li>
-                      <li class="menu-settings__item"><a href="#">Download</a></li>
-                      <li class="menu-settings__item"><a href="#">Revisions</a></li>
-                      <li class="menu-settings__item"><a href="#">Delete</a></li>
-                    </ul>
-                  </div>
-                  <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
-                </div>
-                <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
-              </div>
-              <div class="grid-content__title">Aquire</div>
-              <div class="grid-content__description">Denis Cojemeachin</div>
-            </div>
-            <div class="grid-content__item">
-              <div class="grid-content__group-hover">
-                <div class="grid-content__group-content">
-                  <div class="grid-content__option">
-                    <div class="form-item form-type-checkbox">
-                      <input type="checkbox" id="group-template-3" name="projects" value="projects" class="form-checkbox">
-                      <label for="group-template-3" class="option"></label>
+                      <ul class="menu-settings__list">
+                        <li class="menu-settings__item"><a href="#">Settings</a></li>
+                        <li class="menu-settings__item"><a href="#">Duplicate</a></li>
+                        <li class="menu-settings__item"><a href="#">Publish</a></li>
+                        <li class="menu-settings__item"><a href="#">Download</a></li>
+                        <li class="menu-settings__item"><a href="#">Revisions</a></li>
+                        <li class="menu-settings__item"><a href="#">Delete</a></li>
+                      </ul>
                     </div>
+                    <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
                   </div>
-                  <div class="grid-content__link"><a href="#" target="_blank"></a></div>
-                  <div class="grid-content__settings js-open-menu">
-                      <span class="menu-settings__icon js-btn-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </span>
-                    <ul class="menu-settings__list">
-                      <li class="menu-settings__item"><a href="#">Settings</a></li>
-                      <li class="menu-settings__item"><a href="#">Duplicate</a></li>
-                      <li class="menu-settings__item"><a href="#">Publish</a></li>
-                      <li class="menu-settings__item"><a href="#">Download</a></li>
-                      <li class="menu-settings__item"><a href="#">Revisions</a></li>
-                      <li class="menu-settings__item"><a href="#">Delete</a></li>
-                    </ul>
-                  </div>
-                  <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
+                  <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
                 </div>
-                <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
+                <div class="grid-content__title">Aquire</div>
+                <div class="grid-content__description">Denis Cojemeachin</div>
               </div>
-              <div class="grid-content__title">Aquire</div>
-              <div class="grid-content__description">Denis Cojemeachin</div>
-            </div>
-            <div class="grid-content__item">
-              <div class="grid-content__group-hover">
-                <div class="grid-content__group-content">
-                  <div class="grid-content__option">
-                    <div class="form-item form-type-checkbox">
-                      <input type="checkbox" id="group-template-4" name="projects" value="projects" class="form-checkbox">
-                      <label for="group-template-4" class="option"></label>
+              <div class="grid-content__item">
+                <div class="grid-content__group-hover">
+                  <div class="grid-content__group-content">
+                    <div class="grid-content__option">
+                      <div class="form-item form-type-checkbox">
+                        <input type="checkbox" id="group-template-4" name="projects" value="projects" class="form-checkbox">
+                        <label for="group-template-4" class="option"></label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid-content__link"><a href="#" target="_blank"></a></div>
-                  <div class="grid-content__settings js-open-menu">
-                      <span class="menu-settings__icon js-btn-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </span>
-                    <ul class="menu-settings__list">
-                      <li class="menu-settings__item"><a href="#">Settings</a></li>
-                      <li class="menu-settings__item"><a href="#">Duplicate</a></li>
-                      <li class="menu-settings__item"><a href="#">Publish</a></li>
-                      <li class="menu-settings__item"><a href="#">Download</a></li>
-                      <li class="menu-settings__item"><a href="#">Revisions</a></li>
-                      <li class="menu-settings__item"><a href="#">Delete</a></li>
-                    </ul>
-                  </div>
-                  <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
-                </div>
-                <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
-              </div>
-              <div class="grid-content__title">Aquire</div>
-              <div class="grid-content__description">Denis Cojemeachin</div>
-            </div>
-            <div class="grid-content__item">
-              <div class="grid-content__group-hover">
-                <div class="grid-content__group-content">
-                  <div class="grid-content__option">
-                    <div class="form-item form-type-checkbox">
-                      <input type="checkbox" id="group-template-5" name="projects" value="projects" class="form-checkbox">
-                      <label for="group-template-5" class="option"></label>
+                    <div class="grid-content__link"><a href="#" target="_blank"></a></div>
+                    <div class="grid-content__settings js-open-menu">
+                        <span class="menu-settings__icon js-btn-menu">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      <ul class="menu-settings__list">
+                        <li class="menu-settings__item"><a href="#">Settings</a></li>
+                        <li class="menu-settings__item"><a href="#">Duplicate</a></li>
+                        <li class="menu-settings__item"><a href="#">Publish</a></li>
+                        <li class="menu-settings__item"><a href="#">Download</a></li>
+                        <li class="menu-settings__item"><a href="#">Revisions</a></li>
+                        <li class="menu-settings__item"><a href="#">Delete</a></li>
+                      </ul>
                     </div>
+                    <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
                   </div>
-                  <div class="grid-content__link"><a href="#" target="_blank"></a></div>
-                  <div class="grid-content__settings js-open-menu">
-                      <span class="menu-settings__icon js-btn-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </span>
-                    <ul class="menu-settings__list">
-                      <li class="menu-settings__item"><a href="#">Settings</a></li>
-                      <li class="menu-settings__item"><a href="#">Duplicate</a></li>
-                      <li class="menu-settings__item"><a href="#">Publish</a></li>
-                      <li class="menu-settings__item"><a href="#">Download</a></li>
-                      <li class="menu-settings__item"><a href="#">Revisions</a></li>
-                      <li class="menu-settings__item"><a href="#">Delete</a></li>
-                    </ul>
-                  </div>
-                  <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
+                  <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
                 </div>
-                <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
+                <div class="grid-content__title">Aquire</div>
+                <div class="grid-content__description">Denis Cojemeachin</div>
               </div>
-              <div class="grid-content__title">Aquire</div>
-              <div class="grid-content__description">Denis Cojemeachin</div>
-            </div>
-            <div class="grid-content__item">
-              <div class="grid-content__group-hover">
-                <div class="grid-content__group-content">
-                  <div class="grid-content__option">
-                    <div class="form-item form-type-checkbox">
-                      <input type="checkbox" id="group-template-6" name="projects" value="projects" class="form-checkbox">
-                      <label for="group-template-6" class="option"></label>
+              <div class="grid-content__item">
+                <div class="grid-content__group-hover">
+                  <div class="grid-content__group-content">
+                    <div class="grid-content__option">
+                      <div class="form-item form-type-checkbox">
+                        <input type="checkbox" id="group-template-5" name="projects" value="projects" class="form-checkbox">
+                        <label for="group-template-5" class="option"></label>
+                      </div>
                     </div>
+                    <div class="grid-content__link"><a href="#" target="_blank"></a></div>
+                    <div class="grid-content__settings js-open-menu">
+                        <span class="menu-settings__icon js-btn-menu">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      <ul class="menu-settings__list">
+                        <li class="menu-settings__item"><a href="#">Settings</a></li>
+                        <li class="menu-settings__item"><a href="#">Duplicate</a></li>
+                        <li class="menu-settings__item"><a href="#">Publish</a></li>
+                        <li class="menu-settings__item"><a href="#">Download</a></li>
+                        <li class="menu-settings__item"><a href="#">Revisions</a></li>
+                        <li class="menu-settings__item"><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                    <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
                   </div>
-                  <div class="grid-content__link"><a href="#" target="_blank"></a></div>
-                  <div class="grid-content__settings js-open-menu">
-                      <span class="menu-settings__icon js-btn-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </span>
-                    <ul class="menu-settings__list">
-                      <li class="menu-settings__item"><a href="#">Settings</a></li>
-                      <li class="menu-settings__item"><a href="#">Duplicate</a></li>
-                      <li class="menu-settings__item"><a href="#">Publish</a></li>
-                      <li class="menu-settings__item"><a href="#">Download</a></li>
-                      <li class="menu-settings__item"><a href="#">Revisions</a></li>
-                      <li class="menu-settings__item"><a href="#">Delete</a></li>
-                    </ul>
-                  </div>
-                  <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
+                  <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
                 </div>
-                <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
+                <div class="grid-content__title">Aquire</div>
+                <div class="grid-content__description">Denis Cojemeachin</div>
               </div>
-              <div class="grid-content__title">Aquire</div>
-              <div class="grid-content__description">Denis Cojemeachin</div>
+              <div class="grid-content__item">
+                <div class="grid-content__group-hover">
+                  <div class="grid-content__group-content">
+                    <div class="grid-content__option">
+                      <div class="form-item form-type-checkbox">
+                        <input type="checkbox" id="group-template-6" name="projects" value="projects" class="form-checkbox">
+                        <label for="group-template-6" class="option"></label>
+                      </div>
+                    </div>
+                    <div class="grid-content__link"><a href="#" target="_blank"></a></div>
+                    <div class="grid-content__settings js-open-menu">
+                        <span class="menu-settings__icon js-btn-menu">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      <ul class="menu-settings__list">
+                        <li class="menu-settings__item"><a href="#">Settings</a></li>
+                        <li class="menu-settings__item"><a href="#">Duplicate</a></li>
+                        <li class="menu-settings__item"><a href="#">Publish</a></li>
+                        <li class="menu-settings__item"><a href="#">Download</a></li>
+                        <li class="menu-settings__item"><a href="#">Revisions</a></li>
+                        <li class="menu-settings__item"><a href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                    <div class="grid-content__button"><a class="button button--outline" href="#">Edit page</a></div>
+                  </div>
+                  <div class="grid-content__image"><img src="assets/img/image.jpg" alt="Lander"></div>
+                </div>
+                <div class="grid-content__title">Aquire</div>
+                <div class="grid-content__description">Denis Cojemeachin</div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="example" id="formprofile">
+          <h3 class="example__title"><strong>Profile Form</strong></h3>
+          <div class="block-form-user-edit">
+            <h3>Profile</h3>
+            <form class="form-edit-user">
+              <div class="field-group">
+                <div class="form-item form-item-company-team-name">
+                  <label for="edit-name">Company / Team Name</label>
+                  <input type="text" id="edit-company-team-name" name="" value="" class="form-text" placeholder="Company / Team Name">
+                </div>
+          
+                <div class="form-item form-item-uploader">
+                  <label for="user_avatar">Upload avatar</label>
+                  <input class="form-upload" type="file" id="user_avatar" name="">
+                </div>
+              </div>
+          
+              <div class="form-item form-item-name">
+                <label for="edit-email" >Name</label>
+                <input type="text" id="edit-name" name="" value="" class="form-text" placeholder="Name">
+              </div>
+          
+              <div class="form-item form-item-email">
+                <label for="edit-email" >Email</label>
+                <input type="email" id="edit-email" name="email" value="" class="form-email" placeholder="Email">
+              </div>
+              <hr>
+          
+              <div class="form-item form-item-password-new">
+                <label for="edit-password-new" >Change password</label>
+                <input type="password" id="edit-password-new" name="" value="" class="form-text" placeholder="Change password">
+              </div>
+          
+              <div class="form-item form-item-password-confirm">
+                <label for="edit-password-confirm" >Confirm password</label>
+                <input type="password" id="edit-password-confirm" name="" value="" class="form-text" placeholder="Confirm password">
+              </div>
+              <hr>
+          
+              <div class="form-item form-item-password-current">
+                <label for="edit-password-current" >Confirm changes</label>
+                <input type="password" id="edit-password-current" name="" value="" class="form-text" placeholder="Confirm changes">
+              </div>
+          
+              <div class="form-actions webform-actions form-wrapper" id="edit-actions">
+                <input class="button blue form-submit" type="submit" id="edit-actions-submit" name="op" value="Update and Save">
+              </div>
+            </form>
+          </div>
+          </div>
       </div>
     </section>
     <!-- end main section -->

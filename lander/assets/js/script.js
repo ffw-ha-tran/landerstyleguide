@@ -51,6 +51,16 @@
       $jsMenu = $('.js-open-menu', $jsItem),
       $jsMenuSettingsBtn = $('.js-btn-menu', $jsMenu),
       $menuSettingsList = $jsMenuSettingsBtn.next('.menu-settings__list');
+      
+  // Check checkbox checked
+  var $jsCheckBox = $('.grid-content__option', $jsItem),
+      $jsInputCheck = $('input', $jsCheckBox);
+
+    $jsInputCheck.on('click', function(){
+      if($(this).prop('checked')) {
+        $(this).parents('.grid-content__group-hover').addClass('checked');
+      }
+    });
 
   var expandedMenuFunc = function (index, e) {
     var $this = $(this),
@@ -65,18 +75,33 @@
       $jsMenuChild = $('.expanded-menu__menu-child');
     showHiddenFunction($jsBtnClick,flagMenuSettings, true, false, $jsMenuChild);
 
-    var widthScreen = window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth;
-    if(widthScreen < 768) {
-      showHiddenFunction($jsBtnMobile, flagMenuSettings, true, false, $jsMenuChild);
-    }
+  var widthScreen = window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
+  if(widthScreen < 768) {
+    showHiddenFunction($jsBtnMobile, flagMenuSettings, true, false, $jsMenuChild);
+  }
 
-    $(window).on('load', function () {
-      var $table = $('table', document);
-      if ($table.length && !$table.parent().hasClass('table-responsive')) {
-        $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
-      }
+  $(window).on('load', function () {
+    var $table = $('table', document);
+    if ($table.length && !$table.parent().hasClass('table-responsive')) {
+      $table.not($table.find('table')).wrap('<div class="table-responsive"></div>');
+    }
+  });
+
+  // Navigation scroll
+  var $navFix = $('.navigation-fix'),
+      $btnToggleMenu = $('.navigation-fix__icon', $navFix),
+      $navMenu = $('.menu', $navFix),
+      $navItem = $('.menu__item', $navMenu),
+      $navClickScroll = $('a', $navItem);
+    showHiddenFunction($btnToggleMenu, flagMenuSettings, true, false, $navMenu);
+    $navClickScroll.on('click', function(e) {
+      e.preventDefault();
+      var section = $(this).attr('href');
+      $('html, body').stop().animate({
+        scrollTop: $(section).offset().top
+      }, 1000);
     });
 
   // Include html file in html

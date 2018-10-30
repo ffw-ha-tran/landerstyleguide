@@ -26,6 +26,7 @@
 @import 'base/btn';
 @import 'base/form';
 @import 'base/table';
+@import 'base/extends';
 
 // Vendors
 @import 'vendors/chosen';
@@ -36,9 +37,131 @@
 // Components
 @import 'components/menu-profile';
 @import 'components/grid-content';
+@import 'components/form-user-edit';
 
 // Layouts
 @import 'layouts/layout';
 @import 'layouts/navigation';
 @import 'layouts/header';
 // @import 'layouts/footer';
+
+// Style for style guide page
+.example {
+  margin-bottom: rem(50px);
+
+  &__title {
+    padding-bottom: rem(10px);
+    border-bottom: rem(2px) solid $gray-ec;
+    margin-bottom: rem(30px);
+  }
+
+  &__grid {
+    @extend %clearfix;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      width: 50%;
+      margin-bottom: rem(15px);
+
+      &:nth-child(2n + 1) {
+        float: left;
+      }
+
+      &:nth-child(2n + 2) {
+        float: right;
+      }
+    }
+
+    i {
+      padding-right: rem(10px);
+      font-size: rem(20px);
+      line-height: rem(20px);
+    }
+  }
+}
+
+// Navigation scroll
+.navigation-fix {
+  @extend %clearfix;
+  position: fixed;
+  top: rem(50px);
+  left: rem(-200px);
+  transition: left .5s ease;
+
+  &__icon {
+    background-color: $white;
+    box-shadow: rem(5px 1px 10px 0) rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: rem(40px);
+    padding: rem(10px);
+    position: relative;
+    width: rem(40px);
+
+    i {
+      background-color: $black;
+      height: rem(2px);
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: .5s;
+      width: rem(15px);
+
+      &:nth-child(1) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(-90deg) translateY(30%);
+        left: 30%;
+      }
+    }
+  }
+
+  .menu {
+    float: right;
+    list-style: none;
+    padding: rem(15px 20px 5px 20px);
+    background-color: $white;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.09);
+    width: rem(200px);
+
+    &__item {
+      font-size: rem(12px);
+      margin-bottom: rem(10px);
+      font-weight: 500;
+
+      &.no-link {
+        margin-bottom: rem(15px);
+        font-size: rem(14px);
+      }
+
+      a {
+        color: $gray-41;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  &.open {
+    left: 0;
+
+    .navigation-fix {
+      &__icon {
+        i {
+          &:nth-child(2) {
+            transform: rotate(0) translate(-50%, 0);
+            left: 50%;
+          }
+        }
+      }
+    }
+  }
+}

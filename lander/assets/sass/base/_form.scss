@@ -25,22 +25,22 @@ input[type='submit'] {
   }
 
   &::-webkit-input-placeholder {
-    color: lighten($text-color, 10%);
+    color: $gray-41;
     opacity: 1;
   }
 
   &::-moz-placeholder {
-    color: lighten($text-color, 10%);
+    color: $gray-41;
     opacity: 1;
   }
 
   &:-ms-input-placeholder {
-    color: lighten($text-color, 10%);
+    color: $gray-41;
     opacity: 1;
   }
 
   &:-moz-placeholder {
-    color: lighten($text-color, 10%);
+    color: $gray-41;
     opacity: 1;
   }
 

@@ -9,9 +9,9 @@ h5,
 h6 {
   @include Montserrat;
   color: $text-color;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.15;
-  margin-bottom: rem(15px);
+  margin-bottom: rem(35px);
 }
 
 h1 {
@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-  font-size: rem(24px);
+  font-size: rem(20px);
 }
 
 h4 {
@@ -112,8 +112,8 @@ ul {
 label {
   display: block;
   font-size: 14px;
-  font-weight: 500;
-  margin-bottom: rem(10px);
+  font-weight: 600;
+  margin-bottom: rem(15px);
 }
 
 blockquote {
@@ -136,4 +136,9 @@ iframe {
 
 figure {
   line-height: 0;
+}
+
+hr {
+  border: rem(0.5px) solid $gray-ec;
+  margin: rem(30px) 0;
 }

@@ -24,7 +24,7 @@
     text-align: left;
     top: rem(35px);
     transition: opacity 0.3s ease;
-    z-index: 3;
+    z-index: -1;
   }
 
   &__item {
@@ -142,7 +142,6 @@
   &__group-content {
     background-color: rgba($white, 0);
     border-radius: rem(8px);
-    border: solid 1px transparent;
     bottom: 0;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0);
     left: 0;
@@ -177,6 +176,7 @@
     &.open {
       .menu-settings__list {
         opacity: 1;
+        z-index: 5;
       }
     }
   }
@@ -191,6 +191,8 @@
 
   &__group-hover {
     border-radius: rem(8px);
+    border: solid 1px transparent;
+    height: 100%;
     margin-bottom: rem(18px);
     position: relative;
     width: 100%;
@@ -203,15 +205,17 @@
         &__group-content {
           background-color: rgba($white, 0.7);
           box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.09);
-          border: solid 1px $primary-color;
         }
 
         &__option,
         &__button {
           opacity: 1;
+          z-index: 4;
         }
 
         &__link {
+          z-index: 4;
+
           a {
             color: $primary-color;
           }
@@ -223,6 +227,15 @@
               background-color: $primary-color;
             }
           }
+        }
+      }
+    }
+
+    &.checked {
+      .grid-content {
+        &__option {
+          opacity: 1;
+          z-index: 4;
         }
       }
     }

@@ -1,0 +1,49 @@
+.block-form-user-edit {
+  hr {
+    width: rem(415px);
+  }
+
+  .form-actions {
+    margin-top: rem(35px);
+  }
+
+  .form-item-uploader {
+    position: relative;
+    line-height: 0;
+
+    label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: rem(11px);
+      color: $gray-c7;
+      font-weight: 300;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
+
+  .form-upload {
+    background-color: rgba($gray-f9, 0.9);
+    border-radius: 100%;
+    border: rem(1px) solid $primary-color;
+    font-size: 0;
+    height: rem(87px);
+    outline: none;
+    width: rem(87px);
+  }
+
+  .field-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+  }
+
+  .form-item-company-team-name {
+    margin-right: rem(30px);
+  }
+}
