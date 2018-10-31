@@ -12,26 +12,33 @@
     line-height: 0;
 
     label {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: rem(11px);
+      background-color: rgba($gray-f9, 0.9);
+      border-radius: 100%;
+      border: rem(1px) solid $primary-color;
       color: $gray-c7;
+      font-size: rem(11px);
       font-weight: 300;
+      height: rem(87px);
+      left: 50%;
       line-height: 1.5;
+      padding: rem(27px 10px);
+      position: absolute;
       text-align: center;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(87px);
+      z-index: -1;
     }
   }
 
   .form-upload {
-    background-color: rgba($gray-f9, 0.9);
     border-radius: 100%;
-    border: rem(1px) solid $primary-color;
     font-size: 0;
     height: rem(87px);
     outline: none;
     width: rem(87px);
+    opacity: 0;
+    z-index: 3;
   }
 
   .field-group {
